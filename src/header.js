@@ -1,3 +1,6 @@
+import { home } from './home.js';
+import { menu } from './menu.js';
+import { contact } from './contact';
 import './style.css';
 
 function createButton(text, className = '') {
@@ -13,9 +16,22 @@ function setToSelected(event) {
   if (event.target.tagName == 'BUTTON') {
     document.getElementsByClassName('selected')[0].classList.remove('selected');
     event.target.classList.add('selected');
+
+    if (event.target.textContent == 'Home') {
+      content.replaceChildren();
+      content.appendChild(home);
+    }else if (event.target.textContent == 'Menu') {
+      content.replaceChildren();
+      content.appendChild(menu);
+    } else {
+      content.replaceChildren();
+      content.appendChild(contact);
+    }
+
   }
-  
 }
+
+let content = document.getElementById('content');
 
 let header = document.createElement('header');
 
@@ -41,5 +57,5 @@ let book = createButton('Book a Table', 'book');
 booking.appendChild(book);
 
 header.append(logo,tab,booking);
-
+let test = 0;
 export { header };
