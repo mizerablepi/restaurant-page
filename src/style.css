@@ -29,6 +29,7 @@ button{
   background-color: white;
   border-style: none;  
   color: rgb(133, 128, 128);
+  cursor: pointer;
 }
 
 .selected{

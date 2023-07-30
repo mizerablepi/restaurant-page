@@ -9,6 +9,14 @@ function createButton(text, className = '') {
   return btn;
 }
 
+function setToSelected(event) {
+  if (event.target.tagName == 'BUTTON') {
+    document.getElementsByClassName('selected')[0].classList.remove('selected');
+    event.target.classList.add('selected');
+  }
+  
+}
+
 let header = document.createElement('header');
 
 let logo = document.createElement('div');
@@ -22,6 +30,7 @@ logo.appendChild(uScore);
 
 let tab = document.createElement('div');
 tab.classList.add('tab');
+tab.addEventListener('click', setToSelected);
 let home = createButton('Home', 'selected');
 let menu = createButton('Menu');
 let contact = createButton('Contact Us');
