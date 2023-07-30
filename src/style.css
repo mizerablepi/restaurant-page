@@ -1,0 +1,52 @@
+body{
+  margin: 0;
+}
+
+/* header styles */
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 5rem;
+  align-items: center;
+}
+
+.logo{
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+#uscore{
+  color: brown;
+}
+
+.tab{
+  display: flex;
+  gap: 1.5rem;
+  align-self: flex-end;
+}
+
+button{
+  background-color: white;
+  border-style: none;  
+  color: rgb(133, 128, 128);
+}
+
+.selected{
+  color: black;
+  font-weight: bold;
+  padding-bottom: 0.3rem;
+  border-width:0 0 0.2rem 0;
+  border-color: #d31414;
+  border-style: solid;
+}
+
+.book{
+  background-color: #d31414;
+  color: white;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+
+/* Home styles */
+
