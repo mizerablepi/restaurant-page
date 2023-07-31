@@ -1,6 +1,6 @@
-import { home } from './home.js';
-import { menu } from './menu.js';
-import { contact } from './contact';
+import { homeSection } from './home.js';
+// import { menuSection } from './menu.js';
+// import { contactSection } from './contact';
 import './style.css';
 
 function createButton(text, className = '') {
@@ -19,13 +19,13 @@ function setToSelected(event) {
 
     if (event.target.textContent == 'Home') {
       content.replaceChildren();
-      content.appendChild(home);
+      content.appendChild(homeSection);
     }else if (event.target.textContent == 'Menu') {
       content.replaceChildren();
-      content.appendChild(menu);
+      content.appendChild(menuSection);
     } else {
       content.replaceChildren();
-      content.appendChild(contact);
+      content.appendChild(contactSection);
     }
 
   }
@@ -57,5 +57,5 @@ let book = createButton('Book a Table', 'book');
 booking.appendChild(book);
 
 header.append(logo,tab,booking);
-let test = 0;
+
 export { header };
