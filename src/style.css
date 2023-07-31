@@ -199,6 +199,77 @@ button{
   padding-top: 0.5rem;
 }
 
+/* contact section */
+.contact-title{
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.contact-title span{
+  color: #d31414;
+}
+
+.info-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem 5rem;
+}
+
+.card{
+  background-color: #efefef;
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.card img{
+  object-fit: none;
+  width: fit-content;
+}
+
+.card-right p{
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #8d8d9b;
+  margin: 0 0 0.5rem 0;
+}
+
+.info-form{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 0 5rem 2rem 5rem;
+  gap: 1rem;
+  box-shadow: 0 0 3rem -2rem black;
+  z-index: 1;
+}
+
+.field{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-top-row{
+  display: flex;
+  gap: 1rem;
+}
+
+.form-top-row div{
+  width: 50%;
+}
+
+input, textarea {
+  align-self: stretch;
+  padding: 0.2rem;
+  border-width: 0.1rem;
+  border-color: lightgray;
+  border-style: groove;
+}
+
+
 
 /* footer styles */
 footer{
