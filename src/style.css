@@ -134,3 +134,10 @@ button{
   margin-left: -1rem;
 }
 
+
+/* footer styles */
+footer{
+  background-color: #efefef;
+  text-align: center;
+  padding: 1rem;
+}
