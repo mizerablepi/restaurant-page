@@ -1,6 +1,6 @@
 import { homeSection } from './home.js';
 import { menuSection } from './menu.js';
-// import { contactSection } from './contact';
+import { contactSection } from './contact.js';
 import './style.css';
 
 function createButton(text, className = '') {
