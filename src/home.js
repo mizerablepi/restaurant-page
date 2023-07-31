@@ -1,5 +1,5 @@
-import dishImage from '../images/food-top.png'
-import restaurantImage from '../images/pexels-rachel-claire-6126306.jpg'
+import dishImage from './images/food-top.png'
+import restaurantImage from './images/pexels-rachel-claire-6126306.jpg'
 
 let homeSection = document.createElement('div');
 

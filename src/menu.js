@@ -1,8 +1,8 @@
-import item1Image from '../images/pngwing.com.png';
-import item2Image from '../images/pngwing.com (1).png';
-import item3Image from '../images/pngwing.com (2).png';
-import item4Image from '../images/pngwing.com (3).png';
-import item5Image from '../images/food-top.png';
+import item1Image from './images/pngwing.com.png';
+import item2Image from './images/pngwing.com (1).png';
+import item3Image from './images/pngwing.com (2).png';
+import item4Image from './images/pngwing.com (3).png';
+import item5Image from './images/food-top.png';
 
 function createMenuItem(img, name, description, price) {
   let item = document.createElement('div');
@@ -44,9 +44,6 @@ menuBody.append(
   createMenuItem(item5Image, "Chicken Meal", "Sliced chicken, tomato, chilli, pepper", '$ 42.99'),
   createMenuItem(item1Image, "Chicken & Omlette", "chicken, bread, tomato, Egg", '$ 2.99')
 )
-
-
-
 
 menuSection.append(menuTitle,menuBody);
 export { menuSection };
