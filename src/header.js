@@ -1,5 +1,5 @@
 import { homeSection } from './home.js';
-// import { menuSection } from './menu.js';
+import { menuSection } from './menu.js';
 // import { contactSection } from './contact';
 import './style.css';
 
